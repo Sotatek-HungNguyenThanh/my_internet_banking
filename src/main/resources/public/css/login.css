@@ -1,0 +1,54 @@
+.content {
+    width: 100%;
+    height: calc(100% - 130px);
+    display: table;
+    background: url(/images/bg_login.png) no-repeat;
+    background-size: 100% 100%;
+    min-height: 850px;
+    position: relative;
+}
+.form-login{
+    width: 340px;
+    background-color: rgba(0,0,0,0.5);
+    height: auto;
+    box-align: center;
+    box-pack: center;
+    font-size: 13px;
+    margin: 85px auto;
+    border-radius: 5px;
+    text-align: center;
+    color: white;
+}
+.form-login h4{
+    font-size: 15px;
+    margin-bottom: 10px;
+}
+.form-login img{
+    margin: 30px auto;
+    width: 150px;
+}
+.input-form.form-control
+{
+    width: 75%;
+    color: white;
+    margin: 15px auto 5px;
+    text-align: center;
+    background: transparent !important;
+}
+.btn-login.btn{
+    color: #333;
+    width: 75%;
+    text-align: center;
+    margin: 15px auto 40px;
+    background: #84bc48;
+    font-size: 13px;
+}
+span.error-block{
+    color: red;
+    font-size: 13px;
+}
+p.register-success{
+    text-align: center;
+    font-size: 15px;
+    color: white;
+}

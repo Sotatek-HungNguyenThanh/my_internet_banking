@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="utf-8"/>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1"/>
+
+    <title>Sign In</title>
+
+    <!-- Styles -->
+    <link th:href="@{/css/app.css}" rel="stylesheet"/>
+    <link th:href="@{/css/main.css}" rel="stylesheet"/>
+    <link th:href="@{/css/auth/home.css}" rel="stylesheet"/>
+    <link th:href="@{/css/auth/header.css}" rel="stylesheet"/>
+    <link th:href="@{/css/auth/footer.css}" rel="stylesheet"/>
+    <link th:href="@{/css/home_guest.css}" rel="stylesheet"/>
+
+    <!-- Scripts -->
+    <script th:src="@{/js/app.js}"></script>
+</head>
+<body>
+<div id="app">
+    <header>
+        <a th:href="@{/}"><img th:src="@{/images/logo_header.png}" alt="logo" class="logo-header"/></a>
+        <nav class="navbar-custom">
+            <div>
+                <ul class="navbar-nav-customer">
+                    <li><a href="#">About</a></li>
+                    <li><a href="#">Features</a></li>
+                    <li><a href="#">Reviews</a></li>
+                    <li><a href="#">Contact</a></li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+    <div class="content">
+        <div class="main-content">
+            <form class="form-login" role="form" method="POST" th:action="@{/login}" autocomplete="off">
+                <img th:src="@{/images/home.png}" alt=""/>
+                <h4>SIGN IN</h4>
+                <div>
+                    <input type="email" class="input-form form-control" name="email" placeholder="ID-EMAIL" autocomplete="off" required="required"/>
+                    <input type="password" class='input-form form-control' name="password" placeholder="PASSWORD" autocomplete="off" required="required"/>
+                </div>
+                <div>
+                    <button class="btn-login btn" href="">LOGIN</button>
+                </div>
+            </form>
+        </div>
+    </div>
+    <footer>
+        <div class="content-footer">
+            <div>MyInternetBanking-HUST</div>
+        </div>
+    </footer>
+</div>
+</body>
+</html>
