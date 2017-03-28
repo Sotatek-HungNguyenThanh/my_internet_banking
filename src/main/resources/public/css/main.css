@@ -1,0 +1,44 @@
+@font-face {
+    font-family: "Nanum Gothic";
+    font-weight: normal;
+    src: url(../fonts/nanumgothic.eot);
+    src: local(※), url(../fonts/nanumgothic.woff) format("woff");
+}
+
+@font-face {
+    font-family: "Nanum Gothic";
+    font-weight: bold;
+    src: url(../fonts/nanumgothicbold.eot);
+    src: local(※), url(../fonts/nanumgothicbold.woff) format("woff");
+}
+html,body {
+    height: 100%;
+}
+html,body {
+    background: url('/images/bg_home.png');
+    font-family: "Nanum Gothic";
+    padding: 0 !important;
+}
+@-webkit-keyframes autofill {
+    to {
+        color: #666;
+        background: transparent;
+    }
+}
+
+input:-webkit-autofill {
+    -webkit-animation-name: autofill;
+    -webkit-animation-fill-mode: both;
+}
+.clear{
+    clear: both;
+}
+#app {
+    height: 100%;
+    width: 100%;
+}
+#content{
+    clear: both;
+    height: 100%;
+    width: 100%;
+}

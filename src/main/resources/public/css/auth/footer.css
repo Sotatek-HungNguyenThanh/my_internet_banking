@@ -1,0 +1,10 @@
+footer{
+	background: white;
+	font-family: 'Nanum Gothic';
+}
+footer .content-footer{
+    padding-top: 20px;
+    padding-bottom: 20px;
+    font-size: 1.3rem;
+    text-align: center;
+}

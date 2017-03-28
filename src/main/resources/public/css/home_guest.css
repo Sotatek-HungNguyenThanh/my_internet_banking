@@ -1,0 +1,30 @@
+div.img {
+    width: 300px;
+    margin: 0 auto;
+}
+.main-content p.title{
+    text-align: center;
+    font-size: 30px;
+    color: white;
+    letter-spacing: 4px;
+    font-family: 'Nanum Brush';
+    margin: 50px;
+}
+div.img img {
+    width: 100%;
+}
+.btn-register {
+    margin-top: 30px;
+    text-align: center;
+}
+.btn-register .btn{
+    width: 130px;
+    height: 40px;
+    background: rgba(0,0,0,0.5);
+    border: 1px solid #7F7F7F;
+    color: white;
+    font-size: 13px;
+    padding-top: 10px;
+    text-align: center;
+    margin: 10px;
+}
