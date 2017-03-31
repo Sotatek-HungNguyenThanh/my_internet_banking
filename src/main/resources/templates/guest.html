@@ -8,49 +8,24 @@
     <title>Home</title>
 
     <!-- Styles -->
-    <link th:href="@{/css/app.css}" rel="stylesheet"/>
-    <link th:href="@{/css/main.css}" rel="stylesheet"/>
-    <link th:href="@{/css/auth/home.css}" rel="stylesheet"/>
-    <link th:href="@{/css/auth/header.css}" rel="stylesheet"/>
-    <link th:href="@{/css/auth/footer.css}" rel="stylesheet"/>
-    <link th:href="@{/css/home_guest.css}" rel="stylesheet"/>
+    <link th:href="@{/css/guest.css}" rel="stylesheet"/>
 
-    <!-- Scripts -->
-    <script th:src="@{/js/app.js}"></script>
 </head>
 <body>
-<div id="app">
-    <header>
-        <a th:href="@{/}"><img th:src="@{/images/logo_header.png}" alt="logo" class="logo-header"/></a>
-        <nav class="navbar-custom">
-            <div>
-                <ul class="navbar-nav-customer">
-                    <li><a href="#">About</a></li>
-                    <li><a href="#">Features</a></li>
-                    <li><a href="#">Reviews</a></li>
-                    <li><a href="#">Contact</a></li>
-                </ul>
-            </div>
-        </nav>
-    </header>
+<div id="guest">
     <div class="content">
-        <div class="main-content">
+        <div class="sub-content">
             <p class="title">
                 Welcome to My Internet Banking
             </p>
             <div class="img">
                 <img th:src="@{/images/home.png}" alt=""/>
             </div>
-            <div class="btn-register">
+            <div class="btn-login">
                 <a class="btn" th:href="@{/login}">SIGN IN</a>
             </div>
         </div>
     </div>
-    <footer>
-        <div class="content-footer">
-            <div>MyInternetBanking-HUST</div>
-        </div>
-    </footer>
 </div>
 </body>
 </html>

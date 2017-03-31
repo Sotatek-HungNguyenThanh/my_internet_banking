@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="utf-8"/>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1"/>
+
+    <title>Tài khoản</title>
+
+    <!-- Styles -->
+    <link th:href="@{/css/customer/account.css}" rel="stylesheet" />
+
+    <!-- Scripts -->
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.8/angular.min.js"></script>
+    <script src="https://code.angularjs.org/1.5.8/angular-animate.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.5.1/moment.min.js"></script>
+    <script th:src="@{/js/core/component.js}"></script>
+    <script th:src="@{/js/core/BaseClass.js}"></script>
+    <script th:src="@{/js/core/BaseFilter.js}"></script>
+    <script th:src="@{/js/core/BaseService.js}"></script>
+    <script th:src="@{/js/core/BaseController.js}"></script>
+    <script th:src="@{/js/customer/AccountController.js}"></script>
+
+</head>
+<body>
+<div id="app" ng-app="adminApp">
+    <header>
+        <nav class="navbar-custom">
+            <div class="container-fluid">
+                <a th:href="@{/home}"><img th:src="@{/images/logo_header.png}" alt="logo" class="logo-header" /></a>
+                <div class="nav-customer-content">
+                    <ul class="navbar-nav-customer">
+                        <li>
+                            <a th:href="@{/home}">HOME</a>
+                        </li>
+                        <li>
+                            <a th:href="@{/account}">Tài khoản</a>
+                        </li>
+                        <li>
+                            <a th:href="@{/search}">Tra cứu</a>
+                        </li>
+                        <li ><a th:href="@{/transfer}">Giao dịch</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+    <div class="container">
+        <div class="page-title">
+            <span>Tài khoản</span>
+        </div>
+        <div ng-controller="AccountController as controller" class="ng-cloak">
+            <div class="area-select">
+                <tabs selected="0">
+                    <pane title="Tab1">
+                    </pane>
+                </tabs>
+            </div>
+        </div>
+    </div>
+</div>
+</body>
+</html>

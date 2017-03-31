@@ -1,8 +1,18 @@
+@import "../app.css";
+@import "../base.css";
+body{
+    margin: 0px;
+    padding: 0px;
+}
+#login{
+    margin: 0px;
+    padding: 0px;
+}
 .content {
     width: 100%;
     height: calc(100% - 130px);
     display: table;
-    background: url(/images/bg_login.png) no-repeat;
+    background: url(../../images/bg_login.png) no-repeat;
     background-size: 100% 100%;
     min-height: 850px;
     position: relative;
