@@ -1,0 +1,22 @@
+html,body {
+    height: 100%;
+}
+html,body {
+    background: url(../images/bg_home.png);
+    font-family: 'Open Sans Condensed', sans-serif;
+    padding: 0 !important;
+}
+@-webkit-keyframes autofill {
+    to {
+        color: #666;
+        background: transparent;
+    }
+}
+
+input:-webkit-autofill {
+    -webkit-animation-name: autofill;
+    -webkit-animation-fill-mode: both;
+}
+.clear{
+    clear: both;
+}

@@ -1,0 +1,144 @@
+header{
+    width: 100%;
+    height: 50px;
+    font-size: 62.5%;
+}
+nav.navbar-custom{
+    width: 100%;
+    height: 100%;
+    background: #fafafa;
+    z-index: 11;
+    webkit-box-shadow: 3px 2px 4px rgba(0,0,0,0.31);
+    box-shadow: 3px 2px 4px rgba(0, 0, 0, 0.31);
+    position: relative;
+}
+.nav-customer-content{
+    width: 1000px;
+    margin: auto;
+    height: 50px;
+    padding: 0 10px;
+    position: relative;
+}
+ul.navbar-nav-customer{
+    width: 660px;
+    margin: 0 auto;
+    height: 100%;
+    padding: 0;
+    display: block;
+}
+ul.navbar-nav-customer li{
+    float: left;
+    width: 165px;
+    display: table;
+    height: 50px;
+}
+ul.navbar-nav-customer ul.dropdown-menu li a{
+    color: #333;
+    font-size: 13px;
+}
+ul.navbar-nav-customer li a{
+    display: table-cell;
+    vertical-align: middle;
+    text-align: center;
+    color: #333;
+    font-size: 15px;
+    text-decoration: none;
+}
+
+ul.navbar-nav-customer ul.dropdown-menu li a:hover{
+    color: #54aae0;
+    font-size: 12px;
+}
+ul.navbar-nav-customer li a:focus,
+ul.navbar-nav-customer li a:hover{
+    color: #54aae0;
+}
+ul.navbar-nav-customer li.active a{
+    color: #54aae0;
+}
+.icon-user{
+    right: 5px;
+    position: absolute;
+    top: 15px;
+    width: 70px;
+}
+@media (max-width: 1490px) {
+    .icon-user {
+        right: 9%;
+    }
+}
+.icon-user .glyphicon-cog{
+    cursor: pointer;
+}
+.icon-user .mail-icon{
+    width: 18px;
+    height: 16px;
+    float: left;
+    margin-right: 20px;
+    margin-top: 2px;
+    background: url("/images/mail.png");
+    background-size: 100% 100%;
+}
+.right-menu{
+    position: absolute;
+    right: 0;
+    font-size: 11px;
+    top: 13px;
+}
+.right-menu a.account{
+    text-decoration: none;
+    color: #333;
+    padding: 8px 0 4px 28px;
+    background: url('/images/account.jpg') no-repeat;
+    text-align: center;
+    margin-right: 10px;
+}
+.right-menu a.account:hover,
+.right-menu a.account.active{
+    background: url('/images/account-active.jpg') no-repeat;
+    color: #7fc168;
+}
+abbr[title] {
+    border: none;
+}
+.right-menu .tooltip .tooltip-arrow{
+    border-bottom-color: #525252 !important;
+}
+.right-menu .tooltip .tooltip-inner{
+    background: #525252;
+    font-size: 10px;
+}
+header .dropdown:hover .dropdown-menu {
+    display: block;
+}
+header .dropdown-menu{
+    margin: 0;
+    font-size: 13px;
+    border:none;
+    border-top: 2px solid #00b0f0;
+    border-radius: 0px;
+    text-align: left;
+    font-weight: normal;
+    padding: 0;
+    width: 110px;
+    min-width: 110px;
+    -webkit-box-shadow: 3px 4px 8px rgba(0,0,0,.175);
+    box-shadow: 3px 4px 8px rgba(0,0,0,.175);
+}
+header .dropdown-menu>li{
+    width: 100%;
+}
+header .dropdown-menu>li>a {
+    line-height: 49px;
+    padding: 0;
+    height: 49px;
+}
+header .dropdown-menu>li>a:hover, .dropdown-menu>li>a:focus {
+    font-weight: bold;
+    background-color: #fafafa;
+}
+.logo-header{
+    position: absolute;
+    width: 100px;
+    top: 10px;
+}

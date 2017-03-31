@@ -1,8 +1,21 @@
-div.img {
+@import "app.css";
+@import "base.css";
+
+
+#guest .content {
+    width: 100%;
+    height: calc(100%);
+    display: table;
+    background: url(../images/bg_login.png) no-repeat;
+    background-size: 100% 100%;
+    min-height: 850px;
+    position: relative;
+}
+#guest div.img {
     width: 300px;
     margin: 0 auto;
 }
-.main-content p.title{
+#guest .sub-content p.title{
     text-align: center;
     font-size: 30px;
     color: white;
@@ -10,14 +23,14 @@ div.img {
     font-family: 'Nanum Brush';
     margin: 50px;
 }
-div.img img {
+#guest div.img img {
     width: 100%;
 }
-.btn-register {
+#guest .btn-login {
     margin-top: 30px;
     text-align: center;
 }
-.btn-register .btn{
+#guest .btn-login .btn{
     width: 130px;
     height: 40px;
     background: rgba(0,0,0,0.5);
