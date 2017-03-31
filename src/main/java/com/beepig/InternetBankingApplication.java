@@ -11,8 +11,8 @@ import org.springframework.transaction.annotation.EnableTransactionManagement;
 @EnableTransactionManagement
 @SpringBootApplication()
 public class InternetBankingApplication {
-
     public static void main(String[] args) {
         SpringApplication.run(InternetBankingApplication.class, args);
+
     }
 }
