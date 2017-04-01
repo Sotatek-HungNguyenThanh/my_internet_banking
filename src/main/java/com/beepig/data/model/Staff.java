@@ -1,5 +1,7 @@
 package com.beepig.data.model;
 
+import com.fasterxml.jackson.annotation.JsonSetter;
+
 import javax.persistence.*;
 import java.io.Serializable;
 
@@ -29,7 +31,7 @@ public class Staff implements Serializable {
     @Column(name = "token", nullable = false)
     private String mToken;
     @Column(name = "phone", nullable = false)
-    private Integer mPhone;
+    private String mPhone;
     @Column(name = "email")
     private String mEmail;
 
@@ -37,6 +39,7 @@ public class Staff implements Serializable {
         return mId;
     }
 
+    @JsonSetter("id")
     public void setId(Integer id) {
         mId = id;
     }
@@ -45,6 +48,7 @@ public class Staff implements Serializable {
         return mName;
     }
 
+    @JsonSetter("name")
     public void setName(String name) {
         mName = name;
     }
@@ -53,6 +57,7 @@ public class Staff implements Serializable {
         return mUsername;
     }
 
+    @JsonSetter("username")
     public void setUsername(String username) {
         mUsername = username;
     }
@@ -61,6 +66,7 @@ public class Staff implements Serializable {
         return mLevel;
     }
 
+    @JsonSetter("level")
     public void setLevel(Integer level) {
         mLevel = level;
     }
@@ -69,6 +75,7 @@ public class Staff implements Serializable {
         return mPassword;
     }
 
+    @JsonSetter("password")
     public void setPassword(String password) {
         mPassword = password;
     }
@@ -77,6 +84,7 @@ public class Staff implements Serializable {
         return mIdentification;
     }
 
+    @JsonSetter("identification")
     public void setIdentification(String identification) {
         mIdentification = identification;
     }
@@ -85,6 +93,7 @@ public class Staff implements Serializable {
         return mAddress;
     }
 
+    @JsonSetter("address")
     public void setAddress(String address) {
         mAddress = address;
     }
@@ -93,15 +102,17 @@ public class Staff implements Serializable {
         return mToken;
     }
 
+    @JsonSetter("token")
     public void setToken(String token) {
         mToken = token;
     }
 
-    public Integer getPhone() {
+    public String getPhone() {
         return mPhone;
     }
 
-    public void setPhone(Integer phone) {
+    @JsonSetter("phone")
+    public void setPhone(String phone) {
         mPhone = phone;
     }
 
@@ -109,6 +120,7 @@ public class Staff implements Serializable {
         return mEmail;
     }
 
+    @JsonSetter("email")
     public void setEmail(String email) {
         mEmail = email;
     }
