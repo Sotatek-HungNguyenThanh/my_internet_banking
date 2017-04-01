@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="utf-8"/>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1"/>
+
+    <title>Home</title>
+
+    <!-- Styles -->
+    <link th:href="@{/css/staff/home.css}" rel="stylesheet" />
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css"/>
+
+    <!-- Scripts -->
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.8/angular.min.js"></script>
+    <script src="https://code.angularjs.org/1.5.8/angular-animate.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.5.1/moment.min.js"></script>
+    <script th:src="@{/js/core/component.js}"></script>
+    <script th:src="@{/js/core/BaseClass.js}"></script>
+    <script th:src="@{/js/core/BaseFilter.js}"></script>
+    <script th:src="@{/js/core/BaseService.js}"></script>
+    <script th:src="@{/js/core/BaseController.js}"></script>
+
+</head>
+<body>
+    <header>
+        <nav class="navbar-custom">
+            <div class="container-fluid">
+                <div class="nav-customer-content">
+                    <span class="admin-header">MY INTERNET BANKING</span>
+                </div>
+                <div class="right-menu">
+                    <span class="glyphicon glyphicon-user" aria-hidden="true"></span>
+                    <span class="email-account">
+                        staff@gmail.com
+                    </span>
+                    <a href="#">
+                        <span class="glyphicon glyphicon-log-out" aria-hidden="true"></span>
+                    </a>
+                </div>
+            </div>
+        </nav>
+    </header>
+    <div class="body-page">
+        <div class="row">
+            <div class="side-left">
+                <aside>
+                    <div class="nav-side-menu">
+                        <div class="brand">Setting menu</div>
+                        <div class="list-menu">
+                            <ul>
+                                <li class="item active">
+                                    <a>
+                                        <span class="glyphicon glyphicon-triangle-right" aria-hidden="true"></span>
+                                        Thông tin cá nhân
+                                    </a>
+                                </li>
+                                <li class="item">
+                                    <a>
+                                        <span class="glyphicon glyphicon-triangle-right" aria-hidden="true"></span>
+                                        Thêm người dùng
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </aside>
+            </div>
+            <div class="side-right">
+                <div class="content-view">
+                   <section>
+                        Thong tin ca nhan
+                   </section>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
