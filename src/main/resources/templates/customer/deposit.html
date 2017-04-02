@@ -5,10 +5,10 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
     <meta name="viewport" content="width=device-width, initial-scale=1"/>
 
-    <title>Home</title>
+    <title>Tài khoản</title>
 
     <!-- Styles -->
-    <link th:href="@{/css/customer/home.css}" rel="stylesheet" />
+    <link th:href="@{/css/customer/deposit.css}" rel="stylesheet" />
 
     <!-- Scripts -->
     <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.8/angular.min.js"></script>
@@ -19,11 +19,11 @@
     <script th:src="@{/js/core/BaseFilter.js}"></script>
     <script th:src="@{/js/core/BaseService.js}"></script>
     <script th:src="@{/js/core/BaseController.js}"></script>
-    <script th:src="@{/js/customer/HomeController.js}"></script>
+    <script th:src="@{/js/customer/AccountController.js}"></script>
 
 </head>
 <body>
-<div id="app" ng-app="adminApp" class="ng-cloak">
+<div id="app" ng-app="adminApp">
     <header>
         <nav class="navbar-custom">
             <div class="container-fluid">
@@ -55,14 +55,16 @@
     </header>
     <div class="container">
         <div class="page-title">
-            <span>Trang chủ</span>
+            <span>Tài khoản</span>
         </div>
-        <div ng-controller="HomeController as controller" class="ng-cloak">
+        <div ng-controller="AccountController as controller" class="ng-cloak">
             <div class="area-select">
                 <tabs selected="0">
-                    <pane title="Thông tin cá nhân">
+                    <pane title="Quản lý tài khoản">
                     </pane>
-                    <pane title="Quản lý mật khẩu">
+                    <pane title="Quản lý thẻ">
+                    </pane>
+                    <pane title="Mở thêm thẻ phụ">
                     </pane>
                 </tabs>
             </div>

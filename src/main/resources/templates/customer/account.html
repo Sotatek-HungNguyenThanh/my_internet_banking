@@ -31,15 +31,22 @@
                 <div class="nav-customer-content">
                     <ul class="navbar-nav-customer">
                         <li>
-                            <a th:href="@{/home}">HOME</a>
+                            <a th:href="@{/home}">Trang chủ</a>
                         </li>
                         <li>
                             <a th:href="@{/account}">Tài khoản</a>
                         </li>
                         <li>
-                            <a th:href="@{/search}">Tra cứu</a>
+                            <a th:href="@{/withdraw}">Thanh toán</a>
                         </li>
-                        <li ><a th:href="@{/transfer}">Giao dịch</a>
+                        <li>
+                            <a th:href="@{/deposit}">Gửi tiền</a>
+                        </li>
+                        <li>
+                            <a th:href="@{/transfers}">Chuyển tiền</a>
+                        </li>
+                        <li>
+                            <a th:href="@{/search}">Tra cứu</a>
                         </li>
                     </ul>
                 </div>
@@ -53,7 +60,11 @@
         <div ng-controller="AccountController as controller" class="ng-cloak">
             <div class="area-select">
                 <tabs selected="0">
-                    <pane title="Tab1">
+                    <pane title="Quản lý tài khoản">
+                    </pane>
+                    <pane title="Quản lý thẻ">
+                    </pane>
+                    <pane title="Mở thêm thẻ phụ">
                     </pane>
                 </tabs>
             </div>

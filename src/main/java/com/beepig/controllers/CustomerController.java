@@ -20,13 +20,23 @@ public class CustomerController {
         return "customer/account";
     }
 
+    @RequestMapping(value = "/withdraw")
+    public String showWithdrawPage() {
+        return "customer/withdraw";
+    }
+
+    @RequestMapping(value = "/deposit")
+    public String showDepositPage() {
+        return "customer/deposit";
+    }
+
+    @RequestMapping(value = "/transfers")
+    public String showTransfersPage() {
+        return "customer/transfers";
+    }
+
     @RequestMapping(value = "/search")
     public String showSearchPage() {
         return "customer/search";
-    }
-
-    @RequestMapping(value = "/transaction")
-    public String showTransactionPage() {
-        return "customer/transaction";
     }
 }
